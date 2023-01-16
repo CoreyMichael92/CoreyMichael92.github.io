@@ -10,12 +10,14 @@ html {
 
 
 
+
+
 /* Navebar */
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 5);
+    background-color: #282B2F;
     position: sticky;
     top: 0;
     opacity: .8;
@@ -43,9 +45,9 @@ html {
 }
 
 .navbar ul li a:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px wheat;
+    background-color: #857C8D;
+    color: white;
+    box-shadow: 0 0 10px white;
 
 }
 
@@ -58,7 +60,8 @@ html {
     height: 840px;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
+    color: white;
+    ;
 }
 
 #home::before {
@@ -93,6 +96,7 @@ html {
 .btn {
     padding: 10px 35px;
     background-color: transparent;
+    border-radius: 5px;
     border: 1px solid white;
     color: white;
     outline: none;
@@ -103,10 +107,11 @@ html {
 
 .btn:hover {
     cursor: pointer;
-    background: white;
+    background: #857C8D;
     color: black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
+    transition: all .5s ease;
 }
 
 
@@ -116,7 +121,7 @@ html {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 180px;
     margin-bottom: 50px;
 
 }
@@ -142,6 +147,10 @@ html {
 #intro h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+#intro p {
+    margin-right: 180px;
 }
 
 /* Portfolio Section */
@@ -179,6 +188,7 @@ html {
 
 .row {
     display: flex;
+    margin: 80px;
     justify-content: space-around;
     padding: 20px;
 
@@ -195,7 +205,7 @@ html {
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
+    background: linear-gradient(to top, #282B2F 50%, white 50%);
     background-size: 100% 200%;
     transition: all .8s;
 
@@ -205,8 +215,53 @@ html {
     background-position: left bottom;
     color: white;
     border: none;
-    box-shadow: 0 0 20px rgb(255, 45, 45);
+    box-shadow: 0 0 20px #282B2F;
 
+}
+
+/* Personal Section */
+
+.cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+#personal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.scroll-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+}   
+
+.child {
+    min-width: 600px;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+}
+
+.child-img {
+    width: 100%;
+    height: 100%;
+}
+
+#personal h3 {
+    margin: 180px;
 }
 
 /* Contact Section */
@@ -215,7 +270,7 @@ html {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    background-color:black;
+    background-color:#282B2F;
     color: white;
     padding: 20px;
 }
@@ -258,7 +313,25 @@ html {
     box-shadow: 0 0 10px white;
 }
 
+/* Footer Section */
 
+footer {
+    display: flex;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.socials {
+    width: 50px;
+    border-radius: 10px;
+    background-color: #282B2F;
+    cursor: pointer;
+
+}
 
 
 
