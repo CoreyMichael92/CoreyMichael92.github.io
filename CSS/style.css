@@ -269,6 +269,7 @@ html {
     align-items: center;
     width: 100%;
     height: 100%;
+    
 }
 
 .scroll-img {
@@ -280,6 +281,7 @@ html {
     overflow: auto;
     position: relative;
     scroll-behavior: smooth;
+
 }   
 
 .child {
@@ -288,36 +290,60 @@ html {
     margin: 1px 10px;
     cursor: pointer;
     overflow: hidden;
-
 }
 
 .scroll-img::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
-.child-img {
-    width: 50%;
-    height: 50%;
-    justify-content: space-between;
-}
 
 .child-img-1 {
     width: 62%;
     height: 50%;
+    border-radius: 15px;
+    
+}
+
+.child-img-2 {
+    width: 51%;
+    height: 50%;
+    border-radius: 15px;
+    justify-content: space-between;
+    
 }
 
 .child-img-3 {
     width: 60%;
     height: 50%;
+    border-radius: 15px;
 }
 
-.icon {
-  color: #282B2F;
-  background-color: #282B2F;
-  font-size: px;
+
+
+.child-img-4 {
+    width: 57%;
+    height: 50%;
+    border-radius: 15px;
+    justify-content: space-between;
+    
+}
+
+.child-img-5 {
+    width: 57%;
+    height: 50%;
+    border-radius: 15px;
+    justify-content: space-between;
+    
+}
+
+
+.icon { 
+  color: white;
+  background-color: white;
+  font-size: 50px;
   outline: none;  
   border: none;
-  padding: 0px 20px;
+  padding: opx 20px;
   cursor: pointer;
 }
 
