@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width:800px)" href="/CSS/tablet.css">
     <link rel="stylesheet" media="screen and (max-width:530px)" href="/CSS/phone.css">
+    
 </head>
 
 <body class="container">
@@ -24,7 +25,7 @@
 
  <Section id="home">
     <div class="main">
-        <h1 class="headings">Corey Dickerson <br> Portfolio</h1>
+        <h1 class="headings-home">Corey Dickerson <br> Portfolio</h1>
         <button class="btn">
             Hire me
         </button>
@@ -44,7 +45,7 @@
         </div>
     </section>
 
-    <setion id="portfolio">
+    <section id="portfolio">
         <h1 class="headings">PORTFOLIO</h1>
         <div class="gallery">
             <img src="././assets/HMA.jpg" alt="Home Maintenance Application">
@@ -52,9 +53,9 @@
             <img src="././assets/DonutCounter.jpg" alt="Donut Maker Application">
             <img src="././assets/VPS.jpg" alt="Virtual Pet Application">
         </div>
-    </setion>
+    </section>
 
-    <setion id="services">
+    <!-- <section id="services">
         <h1 class="headings">SERVICES</h1>
         <div class="row">
             <div class="box">
@@ -70,42 +71,50 @@
                 <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae luctus ipsum. Sed id lacus posuere, vehicula nibh a, aliquet nibh. Quisque tempus elementum leo, vel facilisis orci vestibulum vel. Suspendisse in aliquet dui. Aenean ornare posuere turpis quis ultrices. In hac habitasse platea dictumst. Etiam aliquet bibendum fringilla. Nunc libero enim, cursus sit amet consequat eu, congue et felis. Maecenas sodales a enim et scelerisque.</P>
             </div>
         </div>
-    </setion>
+    </section> -->
 
-    <setion id="personal">
+    <section id="personal">
         <h1 class="headings">ONE MORE THING</h1>
         <h3>Here's a little personal info about me in you're interested! I'm and active performing and recording artist and I play and tour with 3 bands. When I'm not working or performing I enjoying spending time with my lovely partner, Alex. I like to travel and be outdoors exploring new parts of the world. I also enjoy doing home/DIY projects. I have two dogs that I love to death named Beck and Charlie. </h3>
+        
+            <button class="icon" onclick="scrolll()"><i class="angle"></i></button>
+       
         <div class="cover">  
             <div class="scroll-img">
-                    <div class="child"><img class="child-img" src="././assets/AlexAndI_AZ.JPG" alt="Alex and I"> <h3>Alex and I hiking in Sedona, AZ 2021</h3></div>
-                    <div class="child"><img class="child-img" src="././assets/john r photo-54.JPG" alt="Performance photo"> <h3>Perfomring with my band The Cordial Sins, opening for Caamp at the Newport Musichall 2019</h3></div>
-                    <div class="child"><img class="child-img" src="././assets/CamperBuy.jpg" alt="Camper purchase"> <h3>Alex and I purchased a camper this past year and we named it Suzi</h3></div>
-                    <div class="child"><img class="child-img" src="././assets/IMG-2028.jpg" alt="Beck and Charlie"> <h3>Our dogs Beck and Charles</h3></div>
-                    <div class="child"><img class="child-img" src="././assets/IMG-3054.jpg" alt="Alex and I"> <h3>Alex and I Fall 2022</h3></div>
-                </div> 
-            </div>    
-    </setion>
+                <div class="child"><img class="child-img-1" src="././assets/AlexAndI_AZ.JPG" alt="Alex and I"></div>
+                <div class="child"><img class="child-img" src="././assets/john r photo-54.JPG" alt="Performance photo"></div>
+                <div class="child"><img class="child-img-3" src="././assets/Camper2.jpg" alt="Camper purchase"></div>
+                <div class="child"><img class="child-img" src="././assets/IMG-2028.jpg" alt="Beck and Charlie"></div>
+                <div class="child"><img class="child-img" src="././assets/IMG-3054.jpg" alt="Alex and I"></div>
+            </div> 
+            
+                <button class="icon" onclick="scrolllr()"><i class="angle"></i></button>
+            
+        </div>    
+    </section>
 
 
-    <setion id="contact">
+    <section id="contact">
         <h1 class="headings">CONTACT</h1>
-        <form action="contact-handler.php" class="form">
-            <input type="text" name="name" id="input" placeholder="Name">
-            <input type="text" name="email" id="input" placeholder="Email">
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+        <form class="form" method="post" action="contact-handler.php" >
+            <input type="text" name="name" id="input" placeholder="Name" required>
+            <input type="email" name="email" id="input" placeholder="Email" required>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
             <input type="submit" value="SEND" id="send">
         </form>
 
-    <footer class="footer">
-        <a href="https://www.linkedin.com/in/corey-dickerson-614cb/" target="blank">
-        <img src="./assets/linkedin.png" alt="Linkedin" class="socials"></a>
-        <a href="https://github.com/CoreyMichael92" target="blank">
-        <img src="./assets/github.png" alt="Github" class="socials"></a>
-        <a href="https://www.instagram.com/mr._van_dad/" target="blank">
-        <img src="./assets/IG.png" alt="Instagram" class="socials"></a>
-        <a href="https://linktr.ee/corey_michael" target="blank">
-        <img src="./assets/linktree.png" alt="Linktree" class="socials"></a>
-    </footer>
+        <footer class="footer">
+            <a href="https://www.linkedin.com/in/corey-dickerson-614cb/" target="blank">
+            <img src="./assets/linkedin.png" alt="Linkedin" class="socials"></a>
+            <a href="https://github.com/CoreyMichael92" target="blank">
+            <img src="./assets/github.png" alt="Github" class="socials"></a>
+            <a href="https://www.instagram.com/mr._van_dad/" target="blank">
+            <img src="./assets/IG.png" alt="Instagram" class="socials"></a>
+            <a href="https://linktr.ee/corey_michael" target="blank">
+            <img src="./assets/linktree.png" alt="Linktree" class="socials"></a>
+        </footer>
+    </section>
+
 
 
     

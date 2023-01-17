@@ -18,6 +18,7 @@ html {
     display: flex;
     justify-content: center;
     background-color: #282B2F;
+    z-index: 9999;
     position: sticky;
     top: 0;
     opacity: .8;
@@ -93,8 +94,19 @@ html {
     margin: 40px 0px;
 }
 
+.headings-home {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 167px -140px;
+}
+
+
 .btn {
     padding: 10px 35px;
+    position: relative;
+    top: 38px;
+    left: 41px;
     background-color: transparent;
     border-radius: 5px;
     border: 1px solid white;
@@ -140,7 +152,7 @@ html {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 45px;
 
 }
 
@@ -166,7 +178,7 @@ html {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-around;
     box-sizing: border-box;
 }
@@ -222,16 +234,40 @@ html {
 /* Personal Section */
 
 .cover {
+    display: flex;
     position: relative;
     width: 90%;
     height: 50%;
 }
+
+.cover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, #282B2F, transparent);
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, #282B2F, transparent);
+
+}
 #personal div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
@@ -243,6 +279,7 @@ html {
     align-items: center;
     overflow: auto;
     position: relative;
+    scroll-behavior: smooth;
 }   
 
 .child {
@@ -250,18 +287,43 @@ html {
     height: 450px;
     margin: 1px 10px;
     cursor: pointer;
-    scroll-behavior: smooth;
     overflow: hidden;
 
 }
 
-.child-img {
-    width: 100%;
-    height: 100%;
+.scroll-img::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
 
+.child-img {
+    width: 50%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.child-img-1 {
+    width: 62%;
+    height: 50%;
+}
+
+.child-img-3 {
+    width: 60%;
+    height: 50%;
+}
+
+.icon {
+  color: #282B2F;
+  background-color: #282B2F;
+  font-size: px;
+  outline: none;  
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+
 #personal h3 {
-    margin: 180px;
+    margin: 14px;
 }
 
 /* Contact Section */
